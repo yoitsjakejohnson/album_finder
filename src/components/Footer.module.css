@@ -1,0 +1,15 @@
+.footer {
+    text-align: center;
+    text-transform: capitalize;
+    background-color: var(--clr-primary-black-650);
+    padding: 2rem 1rem;
+}
+
+.footer .credit a {
+    color: var(--clr-primary-green-500);
+    transition: var(--transition);
+}
+
+.footer .credit a:hover {
+    color: var(--clr-primary-green-600);
+}

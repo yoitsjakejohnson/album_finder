@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+  --clr-primary-black-50: #e7e7e7;
+  --clr-primary-black-100: #cecfcf;
+  --clr-primary-black-150: #b6b7b6;
+  --clr-primary-black-200: #9d9f9e;
+  --clr-primary-black-250: #858886;
+  --clr-primary-black-300: #6c706e;
+  --clr-primary-black-350: #545856;
+  --clr-primary-black-400: #3b403d;
+  --clr-primary-black-450: #222825;
+  --clr-primary-black-500: #0a100d;
+  --clr-primary-black-550: #090e0c;
+  --clr-primary-black-600: #080d0a;
+  --clr-primary-black-650: #070b09;
+  --clr-primary-black-700: #060a08;
+  --clr-primary-black-750: #050807;
+  --clr-primary-black-800: #040605;
+  --clr-primary-black-850: #030504;
+  --clr-primary-black-900: #020303;
+  --clr-primary-black-950: #010201;
+
+  --clr-primary-green-50: #e8f8ee;
+  --clr-primary-green-100: #d2f1dd;
+  --clr-primary-green-150: #bbeacc;
+  --clr-primary-green-200: #a5e3bb;
+  --clr-primary-green-250: #8edcaa;
+  --clr-primary-green-300: #77d598;
+  --clr-primary-green-350: #61ce87;
+  --clr-primary-green-400: #4ac776;
+  --clr-primary-green-450: #34c065;
+  --clr-primary-green-500: #1db954;
+  --clr-primary-green-550: #1aa74c;
+  --clr-primary-green-600: #179443;
+  --clr-primary-green-650: #14823b;
+  --clr-primary-green-700: #116f32;
+  --clr-primary-green-750: #0f5d2a;
+  --clr-primary-green-800: #0c4a22;
+  --clr-primary-green-850: #093819;
+  --clr-primary-green-900: #062511;
+  --clr-primary-green-950: #031208;
+
+  --clr-white: #FFFFFF;
+  --clr-black: #000000;
+  --ff-inter: 'Inter', sans-serif;
+  --transition: all 0.3s ease-in-out
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--clr-primary-black-500);
+  font-family: var(--ff-inter);
+  color: var(--clr-white);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.btn {
+  background-color: var(--clr-primary-green-500);
+  padding: 0.88rem 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+section {
+  min-height: 100vh;
+}

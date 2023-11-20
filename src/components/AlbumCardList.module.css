@@ -1,0 +1,12 @@
+#albumdisplay {
+    margin-bottom: 3.15rem;
+}
+
+@media screen and (min-width: 992px) {
+    .albumdisplaycontainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+    }
+}

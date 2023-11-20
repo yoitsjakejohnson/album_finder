@@ -1,0 +1,19 @@
+#top_chart {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 3.125rem;
+}
+
+#top_chart h1 {
+    font-size: 1.5rem;
+}
+
+#top_chart .week {
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:992px) {
+    #top_chart h1 {
+        font-size: 2.25rem;
+    }
+}

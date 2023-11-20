@@ -1,0 +1,136 @@
+.navbar {
+    width: 100%;
+    background-color: var(--clr-primary-black-500);
+}
+
+.navcenter {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navlogo {
+    color: var(--clr-primary-green-500);
+    font-size: 1.5rem;
+    font-weight: 800;
+    transition: var(--transition);
+}
+
+.navlogo:hover {
+    color: var(--clr-primary-green-600);
+}
+
+.navheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem 1rem;
+}
+
+.navtoggle {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.navtoggle:hover .line {
+    background-color: var(--clr-primary-green-500);
+}
+
+.line {
+    width: 40px;
+    height: 4px;
+    display: block;
+    margin: 8px auto;
+    background-color: var(--clr-white);
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.navtoggle.isactive .line:nth-child(2) {
+    opacity: 0;
+}
+
+.navtoggle.navtoggle.isactive .line:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.navtoggle.navtoggle.isactive .line:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+.navlinks {
+    text-transform: capitalize;
+    background-color: var(--clr-primary-black-700);
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.navlinks.showlinks {
+    padding: 1rem 1rem;
+    height: 188.16px;
+}
+
+.navlinks li {
+    margin-bottom: 1rem;
+}
+
+.navlinks li:last-of-type {
+    margin-bottom: 0;
+}
+
+.navlink {
+    color: var(--clr-white);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.navlink:hover {
+    color: var(--clr-primary-green-500);
+}
+
+.btn {
+    background-color: var(--clr-primary-green-500);
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    color: #FFF;
+    padding: 0.88rem 2rem;
+    transition: var(--transition);
+}
+
+.navbtn:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-primary-green-600);
+}
+
+@media screen and (min-width: 992px) {
+    .navlogo {
+        font-size: 2.25rem;
+    }
+
+    .navtoggle {
+        display: none;
+    }
+
+    .navlinks {
+        display: flex;
+        height: auto;
+        background-color: transparent;
+        align-items: center;
+        gap: 1.875rem;
+    }
+
+    .navcenter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navlinks li {
+        margin-bottom: 0;
+    }
+}
